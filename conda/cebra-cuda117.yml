@@ -1,0 +1,32 @@
+##
+## (c) All rights reserved. ECOLE POLYTECHNIQUE FÉDÉRALE DE LAUSANNE,
+## Switzerland, Laboratory of Prof. Mackenzie W. Mathis (UPMWMATHIS) and
+## original authors: Steffen Schneider, Jin H Lee, Mackenzie W Mathis. 2023.
+##
+## Source code:
+## https://github.com/AdaptiveMotorControlLab/CEBRA
+##
+## Please see LICENSE.md for the full license document:
+## https://github.com/AdaptiveMotorControlLab/CEBRA/LICENSE.md
+##
+
+# This environment can be used to install cebra
+
+name: cebra-cuda117
+channels:
+    - pytorch
+    - nvidia
+    - defaults
+dependencies:
+    - python<3.10
+    - pip
+    - pytorch-cuda=11.7
+    - jupyter
+    - nb_conda
+    - pip:
+        - cebra
+# 
+#
+# conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
+#
+#
